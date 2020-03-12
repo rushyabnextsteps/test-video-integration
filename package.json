@@ -32,7 +32,7 @@
     "clean:examples:localmediacontrols": "rimraf examples/localmediacontrols/public/index.js examples/localmediacontrols/public/helpers.js",
     "clean:examples:remotereconnection": "rimraf examples/remotereconnection/public/index.js examples/remotereconnection/public/helpers.js",
     "clean:quickstart": "rimraf quickstart/public/index.js",
-    "start": "npm run clean && npm run build && node server"
+    "start": "npm run clean && npm run build && nodemon server"
   },
   "repository": {
     "type": "git",
@@ -64,6 +64,7 @@
   "devDependencies": {
     "browserify": "^14.3.0",
     "copyfiles": "^1.2.0",
+    "nodemon": "^2.0.2",
     "npm-run-all": "^4.0.2",
     "rimraf": "^2.6.1"
   }
